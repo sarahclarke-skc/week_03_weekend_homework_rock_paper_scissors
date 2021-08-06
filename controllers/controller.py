@@ -3,7 +3,7 @@ from app import app
 from models.game import *
 from models.player import *
 
-@app.route('/<choice1>/<choice2>')
-def get_winner():
-    pass
+@app.route('/<player.choice>/<player.choice>')
+def print_winner(game):
+    game.get_winner(game.player1.choice, game.player2.choice)
 #return a string
