@@ -3,7 +3,9 @@ from app import app
 from models.game import *
 from models.player import *
 
-@app.route('/<player.choice>/<player.choice>')
-def print_winner(game):
-    game.get_winner(game.player1.choice, game.player2.choice)
+@app.route('/')
+def index():
+    return render_template('base.html', title="Rock Paper Scissors")
+
+    # return game.get_winner(game.player1.choice, game.player2.choice)
 #return a string
