@@ -15,6 +15,9 @@ def play_game(choice1, choice2):
     winner = game.get_winner(player1, player2)
     return render_template('index.html', title="Results", winner = winner, choice1 = choice1, choice2 = choice2)
 
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html', title='Welcome')
 
 
 
