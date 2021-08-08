@@ -3,9 +3,9 @@
 {% block content %}
 
 <section>
-    <h3>Play!</h3>
+    <h3 id="play-heading">Or play against the computer!</h3>
 
-    <section>
+    <section class="form">
 
         <form action="/play" method="post">
             <input type="text" name="player1" id="input-name" placeholder="Write your name here..."> 
@@ -16,7 +16,7 @@
             <option value="scissors">Scissors</option>
             </select>
             <br><br>
-            <input type="submit" value="Play">
+            <input class="button" type="submit" value="Play">
         </form>
     </section>
 

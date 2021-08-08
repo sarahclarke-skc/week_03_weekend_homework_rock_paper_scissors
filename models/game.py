@@ -10,13 +10,9 @@ class Game():
     player1 = Player("player 1", "rock")
     player2 = Player("player 2", "paper")
 
-    def get_computer_player(self, computer):
-        computer.name = "Computer"
-        computer.choice = random.choice(self.choices)
-
-
-    def play_computer(self):
-        pass
+    # def get_computer_player(self, computer):
+    #     computer.name = "Computer"
+    #     computer.choice = random.choice(self.choices)
 
     #Needs refactoring to stop repeating the return statement
     def get_winner(self, player1, player2):
@@ -39,6 +35,9 @@ class Game():
         elif player1.choice == player2.choice:
             return "It's a tie! Play again!"
     
+    # def play_computer(self):
+    #     if self.player.name == None:
+    #         self.get_winner(self.player, self.get_computer_player())
         
 
         

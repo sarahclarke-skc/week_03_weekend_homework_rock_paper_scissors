@@ -1,8 +1,11 @@
 <html>
     <head>
         <title>{{ title }}</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
         <link rel="shortcut icon" type="logo/jpg" href="static/scissors.png"/>
+        <!-- <link rel="shortcut icon" type="logo/jpg" href="{{ url_for('static', filename = 'scissors.png') }}"/> -->
         <link rel="stylesheet" href="static/style.css">
+    
     </head>
     <body>
         <header class="header">
@@ -28,6 +31,42 @@
         {% block content %}
         
         {% endblock %}
+
+        <section class="testimonial-area">
+            <article class="container row">
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial">
+                            <p>"The best game since Tetris!"</p>
+                            <div class="testmonial-author">
+                                <h3>- John Lennon</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial text-center">
+                            <p>"The quickest 21 hours I've ever spent"</p>
+                            <div class="testmonial-author">
+                                <h3>- CodeClan Student</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-testimonial">
+                    <div class="row">
+                        <div class="single-testmonial text-center">
+                            <p>"Best way to make covid legislation"</p>
+                            <div class="testmonial-author">
+                                <h3>- UK Politician</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
         </main>
 

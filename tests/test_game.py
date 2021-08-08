@@ -19,5 +19,8 @@ class TestGame(unittest.TestCase):
     def test_get_winner2(self):
         self.assertEqual("Congratulations Peter, you have won!", Game.get_winner(self, self.player3, self.player4))
     
+    # def test_get_computer_player(self, computer):
+    #     self.assertEqual("rock" or "paper" or "scissors", Game.get_computer_player(self, self.computer.choices))
+    
     def test_get_winner_return_none(self):
-        self.assertEqual(None, Game.get_winner(self, self.player2, self.player3))
+        self.assertEqual("It's a tie! Play again!", Game.get_winner(self, self.player2, self.player3))
