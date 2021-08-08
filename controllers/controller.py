@@ -7,6 +7,10 @@ from models.player import *
 def index():
     return render_template('base.html', title="Rock Paper Scissors")
 
+@app.route('/play')
+def play():
+    return render_template('play.html', title="Play Rock Paper Scissors")
+
 @app.route('/<choice1>/<choice2>')
 def play_game(choice1, choice2):
     player1 = Player("player 1", choice1)
