@@ -13,7 +13,7 @@ def play_game(choice1, choice2):
     player2 = Player("player 2", choice2)
     game = Game(player1,player2)
     winner = game.get_winner(player1, player2)
-    return render_template('index.html', title="Results", winner = winner, choice1 = choice1, choice2 = choice2)
+    return render_template('result.html', title="Results", winner = winner, choice1 = choice1, choice2 = choice2)
 
 @app.route('/welcome')
 def welcome():

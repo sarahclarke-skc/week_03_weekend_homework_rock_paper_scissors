@@ -1,10 +1,8 @@
-<!-- <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}"> -->
-<link rel="stylesheet" href="static/style.css">
-
 <html>
     <head>
         <title>{{ title }}</title>
         <link rel="shortcut icon" type="logo/jpg" href="static/scissors.png"/>
+        <link rel="stylesheet" href="static/style.css">
     </head>
     <body>
         <header class="header">
@@ -17,10 +15,9 @@
                 </nav>
     
         </header>
-        <main>
         {% block content %}
-
         {% endblock %}
+        <main>
         </main>
         
         <footer class="footer">
