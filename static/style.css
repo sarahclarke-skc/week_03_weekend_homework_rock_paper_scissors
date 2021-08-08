@@ -52,6 +52,12 @@ nav ul li a {
 nav ul li a:hover {
     color: red;
 }
+
+#video {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
   
 footer {
 background: rgb(113, 176, 216);
