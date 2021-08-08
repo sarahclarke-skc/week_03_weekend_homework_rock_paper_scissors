@@ -26,6 +26,9 @@ class Game():
             return f"Congratulations {player2.name}, you have won!"
         elif player1.choice == "scissors" and player2.choice == "paper":
             return f"Congratulations {player1.name}, you have won!"
+    
+    def play_computer(self):
+        pass
         
 
         
