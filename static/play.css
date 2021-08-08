@@ -1,0 +1,24 @@
+#play-heading {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.form {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+label[for=move] {
+  margin-left: 150px;
+  font-size: larger;
+}

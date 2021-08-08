@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 from app import app
 from models.game import *
 from models.player import *
@@ -7,11 +7,11 @@ from models.player import *
 def index():
     return render_template('base.html', title="Rock Paper Scissors")
 
-
+#method to be POST
 @app.route('/play') 
 def play():
-    # player1 = Player()
-    # player2 = 
+    # player1 = taken from form imput
+    # player2 = computer
     return render_template('play.html', title="Play Rock Paper Scissors")
 
 @app.route('/<choice1>/<choice2>')

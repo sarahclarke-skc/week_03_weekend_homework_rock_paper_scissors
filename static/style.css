@@ -44,10 +44,6 @@ body main {
     100%{   color: #000;    }
 }
 
-#rules {
-    text-align: center;
-}
-
 li {
     list-style: none;
 }
@@ -84,30 +80,6 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-#play-heading {
-    text-align: center;
-    font-size: xx-large;
-}
-
-.form {
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    font-family: inherit;
-}
-
-label[for=move] {
-  margin-left: 150px;
-  font-size: larger;
-}
 
 #blinking {
     font-size: 35px;
@@ -125,24 +97,6 @@ label[for=move] {
 .article h2 {
     text-align: center;
 }
-
-#to-win {
-    background-color: rgb(70, 100, 150);
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#rules {
-    text-align-last: center;
-}
-#video {
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 60px;
-}
-
 
 .button {
     size: 50px;
