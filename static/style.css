@@ -1,0 +1,93 @@
+#logo {
+    width: 40px;
+    height: auto;
+}
+    .header {
+        color: #fff;
+        background: grey;
+    }
+
+    .header nav ul li a {
+        color: #AAB1B7;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: unset;
+    }
+
+
+  
+  .footer {
+    color: #FFF;
+    background: grey;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .footer-widget {
+    padding:20px;
+    position: relative;
+    top: -14px;
+    justify-content: space-evenly;
+  
+  }
+  
+  .footer-widget li {
+    width: 50%;
+    float: left;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-widget p {
+    color: #AAB1B7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #AAB1B7;
+  }
+  
+  .footer-widget p a {
+    color: #AAB1B7;
+  }
+  
+  .footer-widget p a:hover {
+    color: #FF4A52;
+  }
+  
+  p.footer-text {
+    font-size: 16px;
+    color: #B2B2B2;
+    margin-bottom: 23px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  
+  p.footer-text a.domain {
+    color: #B2B2B2;
+    font-weight: 400;
+  }
+  
+  .footer-widget ul li {
+    color: #ACACAC;
+    font-size: 14px;
+    line-height: 36px;
+  }
+  
+  .footer-widget ul li a {
+    color: #AAB1B7;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: unset;
+  
+  }
+  
+  .footer-widget ul li a:hover {
+    color: #FF4A52;
+  }

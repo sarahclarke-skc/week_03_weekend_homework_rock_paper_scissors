@@ -1,13 +1,47 @@
-<link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+<!-- <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}"> -->
+<link rel="stylesheet" href="static/style.css">
 
 <html>
     <head>
         <title>{{ title }}</title>
-            <h1>Rock Paper Scissors</h1>
+        <link rel="shortcut icon" type="logo/jpg" href="static/scissors.png"/>
     </head>
     <body>
+        <header class="header">
+            <img id=logo src="static/scissors.png" alt="Scissors Logo">
+                <h1>Rock Paper Scissors</h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="/welcome">Welcome</a></li>
+                    </ul>
+                </nav>
+    
+        </header>
+        <main>
         {% block content %}
 
         {% endblock %}
+        </main>
+        
+        <footer class="footer">
+            <div class="container row footer-area">
+                <h3 class="footer-title">
+                    Rock Paper Scissors
+                </h3>
+                <div class="footer-widget">
+                    <ul class="links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#"> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <p>Rock Street <br> Paper Avenue, Scissorville 
+                        <p>
+                        <a href="#">07892 111 222</a> <br>
+                        <a href="#">rockpaperscissors@rockon.com</a>
+                        </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

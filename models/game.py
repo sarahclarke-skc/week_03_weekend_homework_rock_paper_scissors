@@ -8,6 +8,7 @@ class Game():
     player1 = Player("player 1", "rock")
     player2 = Player("player 2", "paper")
 
+    #Needs refactoring to stop repeating the return statement
     def get_winner(self, player1, player2):
         if player1.choice == "rock" and player2.choice == "paper":
             return f"Congratulations {player1.name}, you have won!"
