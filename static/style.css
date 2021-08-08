@@ -30,6 +30,19 @@ body main {
     color: whitesmoke;
 }
 
+#Results {
+    text-align: center;
+    font-size: 50px;
+    font:bolder;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
 
 #rules {
     text-align: center;
@@ -59,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: red;
+    color: rgb(70, 100, 150);
     font-size: xx-large;
 }
 
@@ -68,6 +81,7 @@ nav ul li a:hover {
     border-style: dotted;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 20px;
 }
 
 #play-heading {
@@ -79,7 +93,7 @@ nav ul li a:hover {
     display: flex;
     flex-flow: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 input[type=text] {
@@ -87,26 +101,64 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    font-family: inherit;
+}
+
+label[for=move] {
+  margin-left: 150px;
+  font-size: larger;
+}
+
+#blinking {
+    font-size: 35px;
+    animation:blinkingText 1.2s infinite;
+    padding-right: 20px;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
 
 .article h2 {
     text-align: center;
 }
 
+#to-win {
+    background-color: rgb(70, 100, 150);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#rules {
+    text-align-last: center;
+}
 #video {
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    margin-left: 60px;
 }
 
 
 .button {
     size: 50px;
-    border: 20px;
     background-color: rgb(113, 176, 216);
     color: white;
     font-size: 30px;
     padding: 10px;
+    border-radius: 60px;
+    border-color:rgb(70, 100, 150);
+    margin-left: 300px;
+}
+
+#move {
+    border-radius: 15px;
+    font: inherit;
+    padding: 8px;
 }
 
 .button:hover {
@@ -115,8 +167,19 @@ input[type=text] {
 }
 
 .testimonial-area {
-
+    background-color:rgb(70, 100, 150);
+    padding-left: 50px;
+    margin-bottom: 30px;
 }
+
+.row {
+    display: flex;
+}
+
+.row p {
+    padding: 30px;
+}
+
 
 footer {
 background: rgb(113, 176, 216);
@@ -139,7 +202,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: red;
+    color: rgb(70, 100, 150);
 }
 
 footer p {

@@ -34,6 +34,8 @@ class Game():
             return f"Congratulations {player1.name}, you have won!"
         elif player1.choice == player2.choice:
             return "It's a tie! Play again!"
+        else:
+            "Please type rock, paper, or scissors."
     
     # def play_computer(self):
     #     if self.player.name == None:
