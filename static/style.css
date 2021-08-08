@@ -8,6 +8,15 @@ h1 {
     margin-top: -70px;
 }
 
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color:rgb(95, 124, 143)
+}
+
 #logo {
     width: 60px;
     height: auto;
@@ -58,7 +67,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
 }
-  
+
 footer {
 background: rgb(113, 176, 216);
 width: 100%;
